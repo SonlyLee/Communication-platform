@@ -1,0 +1,34 @@
+<h2>Usage</h2>
+
+<h3>Step1: 下载依赖文件</h3>
+
+<pre class="prettyprint linenums">
+git clone https://github.com/hjzheng/angular-cuf-nav
+bower install
+//在bower_components和build文件中找到依赖的CSS和JavaScript文件
+</pre>
+
+<h3>Step2: 引入依赖的文件</h3>
+
+<pre class="prettyprint linenums">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/bootstrap/dist/css/bootstrap.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;bower_components/bootstrap/dist/css/bootstrap-theme.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;build/css/angular-cuf-nav.min.css&quot;&gt;
+&lt;script src=&quot;bower_components/jquery/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bower_components/angular/angular.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;build/js/angular-cuf-nav.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+<h3>Step3: 配置依赖模块</h3>
+
+<pre class="prettyprint linenums">
+angular.module('test', ['cuf.nav']);
+</pre>
+
+<script type="text/javascript">
+    !function ($) {
+        $(function(){
+            window.prettyPrint && prettyPrint()
+        })
+    }(window.jQuery)
+</script>

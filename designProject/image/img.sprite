@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="创业.png" LocationX="0" LocationY="0" />
+    <Sprite Path="开发.png" LocationX="0" LocationY="33" />
+    <Sprite Path="成果文件.png" LocationX="0" LocationY="66" />
+    <Sprite Path="分享.png" LocationX="0" LocationY="99" />
+    <Sprite Path="其他.png" LocationX="0" LocationY="132" />
+    <Sprite Path="资讯(2).png" LocationX="0" LocationY="165" />
+  </SpriteList>
+</SpriteFile>

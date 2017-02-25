@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+<!-- 	<title>Bootstrap 实例 - 工具提示（Tooltip）插件</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head> -->
+<body>
+<div id="register">
+<h4>会员注册</h4>
+<div class="formdiv">
+<form method="post" action="register.php?action=register" name="register" id="registerForm">
+<dl>
+<dt>请认真填写以下内容</dt>
+<dd class="hasspan">
+用户名：<input type="text" name="username">
+</dd>
+<dd class="hasspan">
+密码：<input type="password" name="pwd">
+</dd>
+<dd class="hasspan">
+确认密码：<input type="password" name="pwdagain">
+</dd>
+<dd id="tximg">
+<img src="img/face/m01.gif" alt="选择头像" id="faceimg">
+<input type="hidden" name="touxiang" value="">
+<label id="imgsrclabel">m01.gif</label>
+</dd>
+<dd style="margin-right:120px;">
+验证码：<input type="text" name="code">
+<span>
+<img src="code.php" alt="code" id="code" name="code">
+<a href="#code" id="change">换一张</a>
+</span>
+</dd>
+<dd class="btns">
+<input type="button" name="submit" id="submit" value="注册">
+<input type="button" name="quit" id="quit" value="退出">
+</dd>
+</dl>
+</form>
+</div>
+</div>
+
+
+<script type="text/javascript">
+function formDeal()
+{
+var btnSubmit = document.getElementById('submit');
+var formId = document.getElementById('registerForm');
+btnSubmit.onclick = function()
+{
+//表单的submit()方法不能提交表单
+formId.submit();
+}
+}
+</script>
+</body>
+</html>

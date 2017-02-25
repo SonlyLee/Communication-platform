@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="skin" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="应用皮肤.png" LocationX="0" LocationY="0" />
+    <Sprite Path="应用皮肤(3).png" LocationX="0" LocationY="40" />
+    <Sprite Path="护眼.png" LocationX="0" LocationY="80" />
+  </SpriteList>
+</SpriteFile>

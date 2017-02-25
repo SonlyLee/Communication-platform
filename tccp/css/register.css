@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+	font-style:normal;
+	font-weight:normal;
+}
+dl,dt,dd{
+	display:block;
+	margin:0;
+}
+body{
+	background-color: #efefef !important;
+	overflow-x:hidden;
+}
+a{
+	text-decoration:none;
+}
+input{
+	border: 1px solid #ddd;
+}
+.header{
+	height: 90px;
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+.header h1{
+	padding-left: 10%;
+}
+.container .row{
+	position: relative !important;
+}
+.container .row .main{
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 20px 100px  !important;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 3px #cbc9c9;
+}
+.main h2{
+	margin-left: 10%;
+	font-family: "微软雅黑";
+	color: #ca5252;
+}
+.main .u-input{
+  position: relative;
+  float: left;
+  height: 66px;
+  width: 100%;
+}
+.main .u-label{
+  float: left;
+  font-family: 微软雅黑;
+  width: 32%;
+  text-align: right;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 45px;
+  color: #333;
+}
+.main .same_input,select{
+  float: left;
+  height: 36px;
+  width: 44%;
+  margin-top: 18px;
+  border: solid 1px #ddd;
+  font-size: 16px;
+  text-indent: 0.5em;
+}
+.main .sex_input{
+  width: 50px;
+  margin-top: 28px;
+}
+.main p{
+  color:red;
+  font-family:微软雅黑;
+  line-height:60px;
+  margin-left:5px;
+  display:none;
+}
+.main #reg{
+	background-color: #ca5252;
+	color: white;
+}
+.main .o-input{
+  clear: both;
+  height: 72px;
+  width: 100%;
+  margin-left:32%;
+  margin-bottom: 0px;
+}
+.main #reg:hover{
+	background-color: red;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link href="http://cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+	
+</head>
+
+<body>
+	<!-- 标题logo 
+	<div class="row">
+		<div class="header col-md-12 col-xs-12">
+			<a href="#"> 
+				<h1>创新创业教育平台</h1>
+			</a>
+		</div>
+	</div>-->
+	<!-- 注册内容 -->
+	<div class="container">
+		<div class="row">
+			<div class="main col-md-12 col-xs-12">
+				<h2>注册</h2>
+				<hr>
+				<form action="user/register" id="registerForm" method="post" onsubmit="return $Register.checkRegister()">
+					<div class="u-input">
+						<label class="u-label">用户名：</label>
+						<input type="text" name="user_name" id="username" class="same_input" required="required" onblur="$Register.is_username()"/>
+						<p id="wrong_name">
+							&nbsp;&nbsp;请输入6~12位数字或字符！</p>
+					</div>
+					<div class="u-input">
+						<label class="u-label">密码：</label>
+						<input type="password" name="user_pass1" id="password1" class="same_input" placeholder="6~16位密码，区分大小写"  required="required" onblur="$Register.is_pwd()"/>
+						<p id="text_pwd">&nbsp;&nbsp;请输入6~16位密码！</p>
+					</div>
+					<div class="u-input">
+						<label class="u-label">确认密码：</label>
+						<input type="password" name="user_pass" id="password2" class="same_input" placeholder="再次输入密码" onblur="$Register.is_same()" required="required"/>
+						<p id="text_same">&nbsp;&nbsp;两次输入密码不一致！</p>
+					</div>
+				<!--	<div class="u-input">
+						<label class="u-label">手机：</label>
+						<input id="private_phone" class="same_input" name=""  required="required" type="text" placeholder="11位手机号" onblur="$Register.is_phone()"/>
+						<p id="text_phone">&nbsp;&nbsp;请输入正确手机号！</p>
+					</div> !-->
+					<div class="u-input">
+						<label class="u-label">邮箱：</label>
+						<input type="email" name="user_mail" id="email" class="same_input" placeholder="user@xx.com" required="required"/>
+					</div>
+					<div class="u-input">
+						<label class="u-label">级别：</label>
+						<select style="margin-top:18px;" name="user_grade">
+						  <option>2012</option><option>2013</option><option>2014</option>
+						  <option>2015</option><option>2016</option><option>2017</option>
+						  <option>2018</option><option>2019</option><option>2020</option>
+						  <option>2021</option><option>2022</option><option>2023</option>
+						  <option>2024</option><option>2025</option><option>2026</option>
+						  <option>2027</option><option>2028</option><option>2029</option>
+						  <option>2030</option><option>2031</option><option>2032</option>
+						  <option>2033</option><option>2034</option><option>2035</option>
+						  <option>2036</option><option>2037</option><option>2038</option>
+						</select>
+					</div>
+					<div class="u-input">
+						<label class="u-label">性别：</label>
+						<input type="radio" class="sex_input" name="user_sex" value="1" checked="checked">妹子
+						<input type="radio" class="sex_input" name="user_sex" value="0">小哥
+					</div>
+					<div class="u-input">
+						<label class="u-label">专业：</label>
+						<select style="margin-top:18px;" name="user_major">
+						  <option value="计算机科学与技术">计算机科学与技术</option><option value="软件工程">软件工程</option>
+						  <option value="网络工程">网络工程</option><option value="其他专业">其他专业</option>
+						</select>
+					</div>
+					<!-- <div class="filed2 VerifiCode">
+						<label id="codename" class="u-label">验证码：</label>
+						<input type="text"/>
+						<img for="codejpg" id="codejpg">
+					</div> -->
+					<div class="o-input">
+						<input id="reg" class="same_input" type="submit" value="提交"/>
+					</div>
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/register.js"></script>
+</body>

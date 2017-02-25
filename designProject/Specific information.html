@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分本分类信息</title>
+    <link rel="stylesheet" href="css/spi.css">
+    <link rel="stylesheet" href="css/page.css">
+</head>
+<body>
+<div class="main">
+    <div class="toolbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="icon" title="IAEEP首页"></a>
+                <a href="#" class="imgicon" title="IAEEP频道"></a>
+            </div>
+            <div class="loginWrap">
+                <ul class="btns">
+                    <li class="loginLink">
+                        <a href="../tccp/signIn.html" id="login_a">登陆</a>
+                        <span id="splitLine">|</span>
+                        <a href="../tccp/register.html" id="reg_a">注册</a>
+                        <div class="login">
+                            <p>
+                                <label for="user" title="账号">账号:</label>
+                                <input type="text" name="user" class="text" id="user" title="请输入账号，不少于3个字符!"/>
+                                <span class="star">*</span>
+                            </p>
+                            <p>
+                                <label for="pass">密码:</label>
+                                <input type="password" name="pass" class="text" id="pass" title="请输入密码，不少于6个字符!"/>
+                                <span class="star">*</span>
+                            </p>
+                        </div>
+                        <span class="cat">查看详细信息</span>
+                    </li>
+                    <li class="search">
+                        <div class="searchCon">
+                            <input type="text" class="searchBox" name="searchBox" placeholder="搜索..."/>
+                        </div>
+                    </li>
+                    <li class="apps">
+                        <div class="appsCon">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">观点</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">排行榜</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="right">
+        <div id="divList1">
+            <script id="dl-template" type="text/x-handlebars-template">
+                <div class="img"></div>
+                <div class="conTip">
+                    <h1 id="{{news_id}}">{{news_title}}</h1>
+                    <hr>
+                    <span> {{news_subject}}</span>
+                    <span id="{{user_id}}">{{user_name}}</span>
+                    <span id="{{lab_id}}">{{lab_name}}</span>
+                    <span>{{news_time}}</span>
+                </div>
+                <div class="showContent">
+                    {{{news_content}}}
+                </div>
+            </script>
+        </div>
+        <div class="backTop"></div>
+        <div class="message">
+             <div id="showmore"><a class="aniu" href="javascript:;">查看评论</a></div>
+             <div class="leavMes">
+                 <div class="comment">
+                    <div class="commetCon">
+                        <ul id="liList">
+                        <script id="li-template" type="text/x-handlebars-template">
+                        {{#each list}}
+                        <li>
+                            <div class="cnt f-brk">
+                                <a href="#" class="name">{{user_name}}</a>
+                                <div class="date">{{comment_time}}</div>
+                            </div>
+                            <div class="head">
+                            <a href="#"><img src="/designProject/image/{{user_image}}"></a>
+                            </div>
+                            <div class="rp">
+                            {{comment_content}}
+                            </div>
+                            <div style="clear:both;"></div>
+                        </li>
+                        {{/each}}
+                        </script>
+                        </ul>
+                        <div class="tcdPageCode">
+                        </div>
+                    </div>
+                 </div>
+             </div>
+             <div class="myleavMes">
+                 <p class="p">我要留言</p>
+                 <form class="word">
+                     <label>
+                         <span class="name">我的名字:</span>
+                     </label>
+                     <label>
+                         <span id="myword">留言:</span>
+                         <textarea id="message" name="message" maxlength="300" placeholder="你要说的话..."></textarea>
+                     </label>
+                     <label>
+                         <span>&nbsp;</span>
+                         <!--<input type="submit" class="button" id="submit" value="提交" />-->
+                         <button class="button" id="submit">提交</button>
+                     </label>
+                 </form>
+
+             </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="js/handlebars-v4.0.5.js" type="text/javascript"></script>
+<script src="js/secific.js" type="text/javascript"></script>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.page.js"></script>
+<script>
+//    $(function () {
+//        var sHeight = $(document).height();
+//        var sWidth = $(document).width();
+//        var $oMask = $('<div id="mask"></div>');
+//        $oMask.css({'height':sHeight+'px','width':sWidth+'px'});
+//        $("body").append($oMask);
+//        var wHeight=$(window).height();
+//        var wWidth=$(window).width();
+//        var $oLogin=$('<div id="face">ndcnuducbuebwuicbuibewuibceuwbc</div>');
+//        $('body').append($oLogin);
+//        var dHeight=$oLogin.height();
+//        var dWidth=$oLogin.width();
+//        $oLogin.css({left:(wWidth-dWidth)/2+"px",top:(wHeight-dHeight)/2+"px"});
+//
+//        document.onreadystatechange = subSomething;//当页面加载状态改变的时候执行这个方法.
+//        function subSomething() {
+//            if (document.readyState == "Completed") //当页面加载状态
+//            {
+//                $oLogin.remove();
+//                $oMask.remove();
+//            }
+//        };
+//    });
+</script>
+
+</body>
+</html>
